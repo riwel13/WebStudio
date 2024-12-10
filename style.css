@@ -45,6 +45,8 @@ nav ul {
 }
 .header_div_span {
     width: 27%;
+    display: flex;
+    justify-content: space-between;
 }
 /* first */
 
