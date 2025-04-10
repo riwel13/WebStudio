@@ -1,243 +1,317 @@
 /* all */
 
 :root {
-    --dark_blue: #2F303A;
---blue: #2196F3;
---white: #FFFFFF;
---grey: #757575;
---dark_grey: #212121;
---black: #000000;
---light_grey: #ECECEC;
+  --dark_blue: #2f303a;
+  --blue: #2196f3;
+  --white: #ffffff;
+  --grey: #757575;
+  --dark_grey: #212121;
+  --black: #000000;
+  --light_grey: #ececec;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    text-underline-position: from-font;
-text-decoration-skip-ink: none;
-font-family: Roboto;
+* {
+  margin: 0;
+  padding: 0;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  font-family: Roboto;
 }
 
 body {
-    width: 100%;
+  width: 100%;
 }
+
 /* header */
 
 header {
-    height: 80px;
-    background-color: var(--white);
-    display: flex;
-    align-items: center;
+  height: 80px;
+  background-color: var(--white);
+  display: flex;
+
 }
+
 .header_div {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 nav {
-    width: 24%;
+  width: 18%;
 }
+
 nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 2%;
+
 }
+
 .header_div_span {
-    width: 27%;
-    display: flex;
-    justify-content: space-between;
+  width: 27%;
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 2%;
+
 }
+
 /* first */
 
 .first {
-    background-color: var(--dark_blue);
-    height: 600px;
-    width: 100%;
+  background-color: var(--dark_blue);
+  height: 600px;
+  width: 100%;
 }
 
 .first div {
-display: flex;
-justify-content: center;
-margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-.first h1 { 
-font-size: 44px;
-font-weight: 900;
-line-height: 60px;
-letter-spacing: 0.06em;
-text-align: center;
-display: flex;
-justify-content: center;
-color: var(--white);
-padding-top: 200px;
+.first h1 {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  padding-top: 200px;
 }
 
 .first button {
-    width: 216px;
-height: 50px;
-top: 430px;
-left: 692px;
-background-color: var(--blue);
-border-radius: 4px 4px 4px 4px;
-font-size: 16px;
-font-weight: 700;
-line-height: 30px;
-letter-spacing: 0.06em;
-text-align: center;
-color: var(--white);
+  width: 216px;
+  height: 50px;
+  top: 430px;
+  left: 692px;
+  background-color: var(--blue);
+  border-radius: 4px 4px 4px 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--white);
 }
 
 /* special */
 .special {
-    height: 286px;
+  height: 286px;
 }
 
 .special_content {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 94px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 94px;
 }
 
 .special_div {
-    width: 23%;
+  width: 23%;
 }
 
 .special_div h3 {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16.41px;
-    letter-spacing: 0.03em; 
-    color: var(--dark_grey);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  color: var(--dark_grey);
 }
 
 .special_div p {
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: var(--grey);
-margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--grey);
+  margin-top: 10px;
 }
 
 /* about */
 
 .about {
-    height: 480px;
+  height: 480px;
 }
 
 .about h2 {
-    text-align: center;
-font-size: 36px;
-font-weight: 700;
-line-height: 42.19px;
-letter-spacing: 0.03em;
-margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.19px;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .about div {
-    width: 75%;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    justify-content: space-between;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* team */
 
 .team {
-    height: 648px;
-    background-color: var(--light_grey);
-    width: 100%;
-}
-.team_content {
-    width: 75%;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 94px;
+  height: 708px;
+  background-color: var(--light_grey);
+  width: 100%;
 }
 
-.team_content div {
-height: 368px;
-text-align: center;
-width: 270px;
-background-color: var(--white);
+.team_content {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+}
+
+.team_content_div {
+  text-align: center;
+
+  width: 270px;
+  background-color: var(--white);
 }
 
 .team_content img {
-    width: 270px;
-height: 260px;
+  width: 270px;
+  height: 260px;
 }
 
 .team h2 {
-    text-align: center;
-font-size: 36px;
-font-weight: 700;
-line-height: 42.19px;
-letter-spacing: 0.03em;
-margin-bottom: 50px;
-padding-top: 94px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.19px;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  padding-top: 94px;
 }
 
 .team h4 {
-    font-family: Roboto;
-font-size: 16px;
-font-weight: 500;
-line-height: 18.75px;
-letter-spacing: 0.03em;
-text-align: center;
-margin-top: 30px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .team h5 {
-    font-family: Roboto;
-font-size: 16px;
-font-weight: 400;
-line-height: 18.75px;
-letter-spacing: 0.03em;
-text-align: center;
-margin-top: 10px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 10px;
 }
 
-/* footer */ 
+/* footer */
 
 footer {
-    height: 252px;
-    background-color: var(--dark_blue);
+  height: 252px;
+  background-color: var(--dark_blue);
 }
 
 footer div {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-padding-top: 60px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
 }
 
 footer h6 {
-    font-family: Roboto;
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: var(--white);
-margin-top: 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  margin-top: 20px;
 }
 
 footer span {
-    font-family: Roboto;
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.03em;
-display: block;
-color: var(--grey);
-margin-top: 9px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  display: block;
+  color: var(--grey);
+  margin-top: 9px;
 }
 
+.svg_icon {
+  width: 44px;
+  height: 44px;
+}
+
+.div_icons {
+  width: 206px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.brands div {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+}
+
+.svg_icon_brands {
+  width: 170px;
+  height: 92px;
+  border: #000000;
+  border-width: 100px;
+}
+
+.brands {
+  align-items: center;
+}
+
+.brands h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.19px;
+  letter-spacing: 0.03em;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+
+.svg_icon:hover {
+  --color3: var(--blue);
+  --color1: var(--white)
+}
+
+.svg_icon_brands:hover {
+  --color1:var(--blue);
+}
