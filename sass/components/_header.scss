@@ -1,0 +1,42 @@
+@use "./../utils/colors";
+
+header {
+  height: 80px;
+  background-color: colors.$white;
+  display: flex;
+}
+
+.header_div {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 18%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 2%;
+}
+
+.header_div_span {
+  width: 27%;
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 2%;
+}

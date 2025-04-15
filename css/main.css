@@ -1,34 +1,7 @@
-/* all */
-
-:root {
-  --dark_blue: #2f303a;
-  --blue: #2196f3;
-  --white: #ffffff;
-  --grey: #757575;
-  --dark_grey: #212121;
-  --black: #000000;
-  --light_grey: #ececec;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  font-family: Roboto;
-}
-
-body {
-  width: 100%;
-}
-
-/* header */
-
 header {
   height: 80px;
-  background-color: var(--white);
+  background-color: #ffffff;
   display: flex;
-
 }
 
 .header_div {
@@ -53,7 +26,6 @@ nav ul {
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 2%;
-
 }
 
 .header_div_span {
@@ -65,13 +37,10 @@ nav ul {
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 2%;
-
 }
 
-/* first */
-
 .first {
-  background-color: var(--dark_blue);
+  background-color: #2f303a;
   height: 600px;
   width: 100%;
 }
@@ -90,7 +59,7 @@ nav ul {
   text-align: center;
   display: flex;
   justify-content: center;
-  color: var(--white);
+  color: #ffffff;
   padding-top: 200px;
 }
 
@@ -99,17 +68,16 @@ nav ul {
   height: 50px;
   top: 430px;
   left: 692px;
-  background-color: var(--blue);
+  background-color: #2196f3;
   border-radius: 4px 4px 4px 4px;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.06em;
   text-align: center;
-  color: var(--white);
+  color: #ffffff;
 }
 
-/* special */
 .special {
   height: 286px;
 }
@@ -132,7 +100,7 @@ nav ul {
   font-weight: 700;
   line-height: 16.41px;
   letter-spacing: 0.03em;
-  color: var(--dark_grey);
+  color: #212121;
 }
 
 .special_div p {
@@ -140,11 +108,9 @@ nav ul {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--grey);
+  color: #757575;
   margin-top: 10px;
 }
-
-/* about */
 
 .about {
   height: 480px;
@@ -167,11 +133,9 @@ nav ul {
   justify-content: space-between;
 }
 
-/* team */
-
 .team {
   height: 708px;
-  background-color: var(--light_grey);
+  background-color: #ececec;
   width: 100%;
 }
 
@@ -186,9 +150,8 @@ nav ul {
 
 .team_content_div {
   text-align: center;
-
   width: 270px;
-  background-color: var(--white);
+  background-color: #ffffff;
 }
 
 .team_content img {
@@ -226,41 +189,6 @@ nav ul {
   margin-top: 10px;
 }
 
-/* footer */
-
-footer {
-  height: 252px;
-  background-color: var(--dark_blue);
-}
-
-footer div {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 60px;
-}
-
-footer h6 {
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--white);
-  margin-top: 20px;
-}
-
-footer span {
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  display: block;
-  color: var(--grey);
-  margin-top: 9px;
-}
-
 .svg_icon {
   width: 44px;
   height: 44px;
@@ -276,6 +204,11 @@ footer span {
   margin-bottom: 30px;
 }
 
+.svg_icon:hover {
+  --color3: colors.$blue;
+  --color1: colors.$white;
+}
+
 .brands div {
   display: flex;
   justify-content: space-between;
@@ -288,8 +221,6 @@ footer span {
 .svg_icon_brands {
   width: 170px;
   height: 92px;
-  border: #000000;
-  border-width: 100px;
 }
 
 .brands {
@@ -306,12 +237,52 @@ footer span {
   margin-bottom: 50px;
 }
 
-
-.svg_icon:hover {
-  --color3: var(--blue);
-  --color1: var(--white)
+.svg_icon_brands:hover {
+  --color1: colors.$blue;
 }
 
-.svg_icon_brands:hover {
-  --color1:var(--blue);
+footer {
+  height: 252px;
+  background-color: #2f303a;
+}
+
+footer div {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+}
+
+footer h6 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+footer span {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  display: block;
+  color: #757575;
+  margin-top: 9px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  font-family: Roboto;
+}
+
+body {
+  width: 100%;
 }

@@ -1,0 +1,33 @@
+@use "./../utils/colors";
+
+.brands div {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+}
+
+.svg_icon_brands {
+  width: 170px;
+  height: 92px;
+}
+
+.brands {
+  align-items: center;
+}
+
+.brands h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.19px;
+  letter-spacing: 0.03em;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.svg_icon_brands:hover {
+  --color1: colors.$blue;
+}

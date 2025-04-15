@@ -1,0 +1,40 @@
+@use "./../utils/colors";
+
+.first {
+  background-color: colors.$dark_blue;
+  height: 600px;
+  width: 100%;
+}
+
+.first div {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.first h1 {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: colors.$white;
+  padding-top: 200px;
+}
+
+.first button {
+  width: 216px;
+  height: 50px;
+  top: 430px;
+  left: 692px;
+  background-color: colors.$blue;
+  border-radius: 4px 4px 4px 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: colors.$white;
+}

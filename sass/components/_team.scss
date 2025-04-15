@@ -1,0 +1,77 @@
+@use "./../utils/colors";
+
+.team {
+  height: 708px;
+  background-color: colors.$light_grey;
+  width: 100%;
+}
+
+.team_content {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+}
+
+.team_content_div {
+  text-align: center;
+  width: 270px;
+  background-color: colors.$white;
+}
+
+.team_content img {
+  width: 270px;
+  height: 260px;
+}
+
+.team h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.19px;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
+
+.team h4 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.team h5 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.svg_icon {
+  width: 44px;
+  height: 44px;
+}
+
+.div_icons {
+  width: 206px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.svg_icon:hover {
+  --color3: colors.$blue;
+  --color1: colors.$white;
+}
