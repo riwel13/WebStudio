@@ -1,4 +1,4 @@
-@use "./../utils/colors";
+@use "../utils/colors";
 
 .brands div {
   display: flex;
@@ -29,5 +29,5 @@
 }
 
 .svg_icon_brands:hover {
-  --color1: colors.$blue;
+  --color1: #{colors.$blue};
 }

@@ -11,10 +11,43 @@
   margin-bottom: 50px;
 }
 
-.about div {
+.div_about {
   width: 75%;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   justify-content: space-between;
+}
+
+.about > h4 {
+  font-family: Roboto;
+font-weight: 700;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 3%;
+text-align: center;
+text-transform: uppercase;
+}
+
+@each $box in box1,box2,box3 {
+  .div_about_#{$box} {
+background-image: url("./../../img/#{$box}.png");
+width: 370px;
+height: 294px;
+position: relative;
+  }
+}
+
+.box_title {
+  width: 370px;
+  height: 70px;
+
+  background-color:aqua;
+
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
 }

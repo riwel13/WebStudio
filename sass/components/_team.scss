@@ -72,6 +72,6 @@
 }
 
 .svg_icon:hover {
-  --color3: colors.$blue;
-  --color1: colors.$white;
+  --color3: #{colors.$blue};
+  --color1: #{colors.$white};
 }
