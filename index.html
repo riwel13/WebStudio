@@ -14,7 +14,6 @@
   </head>
 
   <body>
-    
     <header>
       <div class="header_div">
         <div class="header_div_div">
@@ -22,7 +21,6 @@
         </div>
         <nav>
           <ul class="header_nav_ul">
-            
             <li class="header_nav_ul_li">Студія</li>
 
             <li class="header_nav_ul_li">Портфоліо</li>
@@ -39,11 +37,115 @@
     <main>
       <section class="first">
         <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <div class="first_div"><button>Замовити послугу</button></div>
+        <div class="first_div">
+          <button class="btn-open">Замовити послугу</button>
+        </div>
       </section>
 
-      <div>
-        
+      <div class="backdrop is-hidden">
+        <div class="modal">
+          <button class="btn-close">
+            <svg
+              class="svg_icon_close"
+              width="11"
+              height="11"
+              viewBox="0 0 11 11"
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+
+          <div class="modal_content">
+            <h4>Залиште свої дані, ми вам передзвонимо</h4>
+            <div class="label_div">
+              <label class="form-label">
+                <p>Ім'я</p>
+                <div class="input">
+                  <svg
+                    class="svg_icon_modal"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 6C7.6575 6 9 4.6575 9 3C9 1.3425 7.6575 0 6 0C4.3425 0 3 1.3425 3 3C3 4.6575 4.3425 6 6 6ZM6 7.5C3.9975 7.5 0 8.505 0 10.5V11.25C0 11.6625 0.3375 12 0.75 12H11.25C11.6625 12 12 11.6625 12 11.25V10.5C12 8.505 8.0025 7.5 6 7.5Z"
+                      fill="#212121"
+                    />
+                  </svg>
+                  <input type="text" />
+                </div>
+              </label>
+            </div>
+
+            <div class="label_div">
+              <label class="form-label">
+                <p>Телефон</p>
+                <div class="input">
+                  <svg
+                    class="svg_icon_modal"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.996 9.12256L10.1579 8.91269C9.71644 8.86203 9.28224 9.01401 8.97105 9.32519L7.63948 10.6568C5.59147 9.61466 3.91254 7.94296 2.87044 5.8877L4.20925 4.54888C4.52043 4.2377 4.6724 3.80349 4.62174 3.36205L4.41188 1.53836C4.32504 0.807445 3.70991 0.257446 2.97176 0.257446H1.71979C0.902035 0.257446 0.221776 0.937708 0.272434 1.75547C0.655984 7.93572 5.59871 12.8712 11.7717 13.2548C12.5894 13.3054 13.2697 12.6252 13.2697 11.8074V10.5555C13.2769 9.82453 12.7269 9.2094 11.996 9.12256Z"
+                      fill="#212121"
+                    />
+                  </svg>
+
+                  <input type="tel" />
+                </div>
+              </label>
+            </div>
+
+            <div class="label_div">
+              <label class="form-label">
+                <p>Пошта</p>
+                <div class="input">
+                  <svg
+                    class="svg_icon_modal"
+                    width="16"
+                    height="12"
+                    viewBox="0 0 16 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14 0H2C1.175 0 0.5075 0.675 0.5075 1.5L0.5 10.5C0.5 11.325 1.175 12 2 12H14C14.825 12 15.5 11.325 15.5 10.5V1.5C15.5 0.675 14.825 0 14 0ZM13.7 3.1875L8.3975 6.5025C8.1575 6.6525 7.8425 6.6525 7.6025 6.5025L2.3 3.1875C2.1125 3.0675 2 2.865 2 2.6475C2 2.145 2.5475 1.845 2.975 2.1075L8 5.25L13.025 2.1075C13.4525 1.845 14 2.145 14 2.6475C14 2.865 13.8875 3.0675 13.7 3.1875Z"
+                      fill="#212121"
+                    />
+                  </svg>
+                  <input type="email" />
+                </div>
+              </label>
+            </div>
+
+            <div class="label_div">
+              <label class="form-label">
+                <p>Коментар</p>
+                <div class="textarea">
+                  <textarea placeholder="Введіть текст"></textarea>
+                </div>
+              </label>
+            </div>
+
+            <label class="check_label">
+              <input type="checkbox" />
+              <p>Погоджуюся з розсилкою та приймаю</p>
+              <a href="#">Умови договору</a>
+            </label>
+            <button class="butt_modal">Відправити</button>
+          </div>
+        </div>
       </div>
 
       <section class="special">
@@ -81,27 +183,23 @@
       <section class="about">
         <h2>Чим ми займаємося</h2>
         <div class="div_about">
-
-         <div class="div_about_box1">
-          <div class="box_title">
-            <p>Десктопні додатки</p>
+          <div class="div_about_box1">
+            <div class="box_title">
+              <p>Десктопні додатки</p>
+            </div>
           </div>
-         </div>
-         <div class="div_about_box2">
-          <div class="box_title">
-            <p>Мобільні додатки</p>
+          <div class="div_about_box2">
+            <div class="box_title">
+              <p>Мобільні додатки</p>
+            </div>
           </div>
-         </div>
-         <div class="div_about_box3">
-          <div class="box_title">
-            <p>Дизайнерські рішення</p>
+          <div class="div_about_box3">
+            <div class="box_title">
+              <p>Дизайнерські рішення</p>
+            </div>
           </div>
-         </div>
-          
         </div>
       </section>
-
-
 
       <section class="team">
         <h2>Наша команда</h2>
@@ -112,16 +210,16 @@
             <h5>Product Designer</h5>
             <div class="div_icons">
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-insta"></use>
+                <use href="img/symbol-defs1.svg#icon-insta"></use>
               </svg>
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-twiter"></use>
+                <use href="img/symbol-defs1.svg#icon-twiter"></use>
               </svg>
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-facebook"></use>
+                <use href="img/symbol-defs1.svg#icon-facebook"></use>
               </svg>
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-in"></use>
+                <use href="img/symbol-defs1.svg#icon-in"></use>
               </svg>
             </div>
           </div>
@@ -132,16 +230,16 @@
             <h5>Frontend Developer</h5>
             <div class="div_icons">
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-insta"></use>
+                <use href="img/symbol-defs1.svg#icon-insta"></use>
               </svg>
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-twiter"></use>
+                <use href="img/symbol-defs1.svg#icon-twiter"></use>
               </svg>
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-facebook"></use>
+                <use href="img/symbol-defs1.svg#icon-facebook"></use>
               </svg>
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-in"></use>
+                <use href="img/symbol-defs1.svg#icon-in"></use>
               </svg>
             </div>
           </div>
@@ -152,16 +250,16 @@
             <h5>Marketing</h5>
             <div class="div_icons">
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-insta"></use>
+                <use href="img/symbol-defs1.svg#icon-insta"></use>
               </svg>
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-twiter"></use>
+                <use href="img/symbol-defs1.svg#icon-twiter"></use>
               </svg>
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-facebook"></use>
+                <use href="img/symbol-defs1.svg#icon-facebook"></use>
               </svg>
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-in"></use>
+                <use href="img/symbol-defs1.svg#icon-in"></use>
               </svg>
             </div>
           </div>
@@ -172,16 +270,16 @@
             <h5>UI Designer</h5>
             <div class="div_icons">
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-insta"></use>
+                <use href="img/symbol-defs1.svg#icon-insta"></use>
               </svg>
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-twiter"></use>
+                <use href="img/symbol-defs1.svg#icon-twiter"></use>
               </svg>
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-facebook"></use>
+                <use href="img/symbol-defs1.svg#icon-facebook"></use>
               </svg>
               <svg class="svg_icon">
-                <use href="img/symbol-defs.svg#icon-in"></use>
+                <use href="img/symbol-defs1.svg#icon-in"></use>
               </svg>
             </div>
           </div>
@@ -192,22 +290,22 @@
         <h2>Постійні клієнти</h2>
         <div>
           <svg class="svg_icon_brands">
-            <use href="img/symbol-defs.svg#icon-Client1"></use>
+            <use href="img/symbol-defs1.svg#icon-Client1"></use>
           </svg>
           <svg class="svg_icon_brands">
-            <use href="img/symbol-defs.svg#icon-Client2"></use>
+            <use href="img/symbol-defs1.svg#icon-Client2"></use>
           </svg>
           <svg class="svg_icon_brands">
-            <use href="img/symbol-defs.svg#icon-Client3"></use>
+            <use href="img/symbol-defs1.svg#icon-Client3"></use>
           </svg>
           <svg class="svg_icon_brands">
-            <use href="img/symbol-defs.svg#icon-Client4"></use>
+            <use href="img/symbol-defs1.svg#icon-Client4"></use>
           </svg>
           <svg class="svg_icon_brands">
-            <use href="img/symbol-defs.svg#icon-Client5"></use>
+            <use href="img/symbol-defs1.svg#icon-Client5"></use>
           </svg>
           <svg class="svg_icon_brands">
-            <use href="img/symbol-defs.svg#icon-Client6"></use>
+            <use href="img/symbol-defs1.svg#icon-Client6"></use>
           </svg>
         </div>
       </section>
@@ -221,6 +319,11 @@
         <span>+38 096 111 11 11</span>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <script src="./modal.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

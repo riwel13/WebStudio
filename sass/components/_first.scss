@@ -39,3 +39,173 @@
   color: colors.$white;
 }
 
+.backdrop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  background-color: colors.$white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal_content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal h4 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 3%;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 6px;
+}
+
+.svg_icon_close {
+  width: 11px;
+  height: 11px;
+}
+
+.svg_icon_modal {
+  width: 18px;
+  height: 18px;
+  margin: 11px;
+}
+
+.btn-close {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: none;
+  border-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.svg_icon_close:hover {
+  path {
+    fill: #{colors.$blue};
+  }
+}
+
+.modal p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+
+.label_div {
+  width: 100%;
+}
+
+.form-label {
+  width: 100%;
+
+  input,
+  textarea {
+    border: none;
+    all: unset;
+    width: 100%;
+  }
+}
+
+.input,
+.textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+.textarea {
+  height: 120px;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px 16px;
+  font-family: Roboto;
+  font-size: 12px;
+
+  textarea::placeholder {
+    font-family: Roboto;
+    font-size: 12px;
+  }
+}
+
+.check_label {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 14px;
+  p {
+    margin: 0;
+    font-size: inherit;
+  }
+
+  a {
+    all: unset;
+    color: colors.$blue;
+  }
+}
+
+
+.butt_modal {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  background-color: colors.$blue;
+  color: colors.$white;
+  border: none;
+  border-radius: 4px;
+}
+
+.butt_modal:hover {
+  cursor: pointer;
+}
+
+.form-label:hover {
+  .input,
+.textarea {
+  border-color: colors.$blue;}
+  cursor: pointer;
+  .svg_icon_modal {
+    path {
+      fill: #{colors.$blue};
+    }
+  }
+}
