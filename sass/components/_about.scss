@@ -1,4 +1,5 @@
 @use "../utils/colors";
+@use "../utils/mixins";
 
 .about {
   height: 480px;
@@ -47,9 +48,7 @@
   color: colors.$white;
   background-color: colors.$dark_blue;
   opacity: 0.8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex_all_center;
 }
 
 @media (min-resolution: 2x) {
