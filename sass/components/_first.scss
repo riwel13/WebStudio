@@ -4,6 +4,7 @@
   background-color: colors.$dark_blue;
   height: 600px;
   width: 100%;
+  animation: fon_migaet 5s infinite;
 }
 
 .first div {
@@ -30,13 +31,14 @@
   top: 430px;
   left: 692px;
   background-color: colors.$blue;
-  border-radius: 4px 4px 4px 4px;
+  border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.06em;
   text-align: center;
   color: colors.$white;
+  
 }
 
 .backdrop {
@@ -211,5 +213,19 @@
     path {
       fill: #{colors.$blue};
     }
+  }
+}
+
+@keyframes fon_migaet {
+  0% {
+    background-color: colors.$dark_blue;
+  }
+
+  50% {
+   background-color: rgb(26, 26, 34);
+  }
+
+  100% {
+     background-color: colors.$dark_blue;
   }
 }

@@ -78,6 +78,7 @@ a {
   background-color: #2f303a;
   height: 600px;
   width: 100%;
+  animation: fon_migaet 5s infinite;
 }
 
 .first div {
@@ -104,7 +105,7 @@ a {
   top: 430px;
   left: 692px;
   background-color: #2196f3;
-  border-radius: 4px 4px 4px 4px;
+  border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
@@ -284,6 +285,17 @@ a {
   fill: #2196f3;
 }
 
+@keyframes fon_migaet {
+  0% {
+    background-color: #2f303a;
+  }
+  50% {
+    background-color: rgb(26, 26, 34);
+  }
+  100% {
+    background-color: #2f303a;
+  }
+}
 .special {
   height: 286px;
 }
