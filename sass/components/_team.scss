@@ -59,6 +59,8 @@
 .svg_icon {
   width: 44px;
   height: 44px;
+  transition: var(--color1) 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  var(--color3) 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .div_icons {
