@@ -1,8 +1,10 @@
 @use "../utils/colors";
 @use "../utils/mixins";
 
-.about {
-  height: 480px;
+@media screen and (max-width: 1320px) {
+  .div_about {
+    flex-wrap: wrap;
+  }
 }
 
 .about h2 {
@@ -39,6 +41,9 @@
     height: 294px;
     display: flex;
     align-items: end;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
   }
 }
 
@@ -48,7 +53,7 @@
   color: colors.$white;
   background-color: colors.$dark_blue;
   opacity: 0.8;
-  @include flex_all_center;
+  @include mixins.flex_all_center;
 }
 
 @media (min-resolution: 2x) {

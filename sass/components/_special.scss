@@ -1,8 +1,28 @@
 @use "./../utils/colors";
+@use "./../utils/mixins";
 
-.special {
-  height: 286px;
+@media screen and (max-width: 1320px) {
+  .special_content {
+    flex-wrap: wrap;
+  }
+  .special_div {
+    width: 354px;
+  }
 }
+
+@media screen and (max-width: 480px) {
+  .special_content {
+    flex-wrap: wrap;
+  }
+  .special_div {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
 
 .special_content {
   width: 75%;
@@ -14,7 +34,8 @@
 }
 
 .special_div {
-  width: 23%;
+  width: 270px;
+  margin-bottom: 20px;
 }
 
 .special_div h3 {
