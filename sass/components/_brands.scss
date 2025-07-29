@@ -1,11 +1,7 @@
 @use "../utils/colors";
 @use "./../utils/mixins";
 
-@media screen and (max-width: 1320px) {
-  .brands_cheto {
-    flex-wrap: wrap;
-  }
-}
+
 
 .brands_cheto {
   display: flex;
@@ -38,4 +34,26 @@
 
 .svg_icon_brands:hover {
   --color1: #{colors.$blue};
+}
+
+@media screen and (max-width: 1320px) {
+  .brands_cheto {
+    flex-wrap: wrap;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .svg_icon_brands {
+    width: 140px;
+    
+
+  }
+
+  .brands_cheto {
+    margin-left: 35px;
+    margin-right: 35px;
+
+  }
 }

@@ -1,11 +1,9 @@
 @use "../utils/colors";
 @use "../utils/mixins";
 
-@media screen and (max-width: 1320px) {
-  .div_about {
-    flex-wrap: wrap;
-  }
-}
+
+
+
 
 .about h2 {
   text-align: center;
@@ -61,5 +59,18 @@
     .div_about_#{$box} {
       background-image: url("../img/#{$box}@2x.png");
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1320px) {
+  .div_about {
+    flex-wrap: wrap;
   }
 }

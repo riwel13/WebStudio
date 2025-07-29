@@ -1,16 +1,16 @@
 @use "./../utils/colors";
 @use "./../utils/mixins";
 
-@media screen and (max-width: 1320px) {
-  .header_div_span {
-    flex-direction: column;
-  }
-}
+
+
 
 header {
   height: 80px;
   background-color: colors.$white;
   display: flex;
+  border: 1px solid #EEEEEE;
+  width: 100%;
+
 }
 
 .header_div {
@@ -40,7 +40,7 @@ header nav ul {
   font-size: 14px;
 }
 
-p {
+header p {
   margin: 10px;
 }
 
@@ -81,3 +81,184 @@ a {
   transition: transform 250ms ease-in-out;
 
 }
+
+.header_div_div {
+  display: flex;
+  align-items: center;
+}
+
+.burger-open {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
+
+
+  display: none;
+}
+
+.svg_icon2 {
+  width: 24px;
+  height: 16px;
+}
+
+
+@media screen and (max-width: 480px) {
+  nav {
+    display: none;
+  }
+
+  .header_div_span p {
+    display: none;
+  }
+
+  .burger-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header_div {
+    margin: 0 auto ;
+    width: 75%;
+    
+  }
+
+}
+
+@media screen and (max-width: 1320px) {
+  .header_div_span {
+    flex-direction: column;
+  }
+
+  .header_div_div img {
+    width: 134px;
+  }
+
+}
+
+/* .backdrop {
+  position: fixed;
+  @include mixins.flex_all_center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  background-color: colors.$white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+} */
+
+.burger_window {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 1;
+}
+
+.burger_window.is-hiddenn {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.burger-close {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
+ margin-left: auto;
+  //margin-right: 15px;
+  //margin-top: 15px;
+}
+.svg_icon_closee {
+  width: 18px;
+  height: 18px;
+}
+.firstblockburger {
+  height: 208px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.firstblockburger a {
+  font-family: Roboto;
+  font-size: 40px;
+  color: #212121;
+  font-weight: bold;
+
+  &:hover {
+    color: colors.$blue;
+  }
+
+}
+
+.secondblockburger p {
+  font-family: Roboto;
+  font-size: 24px;
+  margin: 0 0 35px;
+  color: #757575;
+
+  &:hover {
+    color: colors.$blue;
+  }
+}
+
+.secondblockburger {
+  margin-top: 302px;
+}
+
+.secondblockburger h6 {
+  font-family: Roboto;
+  font-size: 34px;
+  margin-bottom: 20px;
+
+  &:hover {
+    color: colors.$blue;
+  }
+}
+
+.burger_content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.thirdblockburger {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  font-family: Roboto;
+  font-size: 18px;
+  gap: 10px;
+
+  color: #212121;
+
+  a:hover {
+    color: colors.$blue;
+  }
+
+}
+
+.peregorodka {
+  width: 1.5px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+
+  
+}
+

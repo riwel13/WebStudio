@@ -1,0 +1,88 @@
+@use "./../utils/colors";
+@use "./../utils/mixins";
+
+
+
+.buttom_port {
+  padding: 6px 22px;
+  background-color: #f5f4fa;
+  border: none;
+color: #212121;
+  font-family: Roboto;
+
+  font-size: 16px;
+}
+
+.main_content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttom_port:hover {
+    background-color: colors.$blue;
+    color: white;
+}
+
+.buttombox {
+  margin: 94px 0 50px;
+
+}
+
+.photo_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.photobox {
+  width: 370px;
+  height: 404px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1px solid #EEEEEE;
+
+  p {
+    font-family: Roboto;
+    font-size: 16px;
+  }
+
+  h4 {
+    font-family: Roboto;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+}
+
+.photobox img {
+  background-color: aquamarine;
+  height: 294px;
+  width: 100%;
+}
+
+.textboxport {
+  margin: 20px 24px;
+}
+
+
+@media screen and (max-width: 1320px) {
+  .photo_content {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+.buttombox {
+  margin-left: 25px;
+}
+.buttom_port {
+  margin-bottom: 15px;
+}
+
+
+}

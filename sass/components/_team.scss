@@ -2,16 +2,6 @@
 
 @use "./../utils/mixins";
 
-@media screen and (max-width: 1320px) {
-  .team_content {
-    flex-wrap: wrap;
-  }
-  .team_content_div {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-  }
-}
 
 
 .team {
@@ -90,3 +80,15 @@
   --color3: #{colors.$blue};
   --color1: #{colors.$white};
 }
+
+@media screen and (max-width: 1320px) {
+  .team_content {
+    flex-wrap: wrap;
+  }
+  .team_content_div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+}
+

@@ -3,11 +3,15 @@
 
 
 
+
+
+
+
 .first {
-  background-color: colors.$dark_blue;
+  
+  background-image: url(/img/img_background.png);
   height: 600px;
   width: 100%;
-  animation: fon_migaet 5s infinite;
 }
 
 .first div {
@@ -226,3 +230,17 @@
      background-color: colors.$dark_blue;
   }
 }
+
+
+@media screen and (max-width: 1320px) {
+  .first h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .first h1 {
+    font-size: 25px;
+  }
+}
+
