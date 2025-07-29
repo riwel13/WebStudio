@@ -24,12 +24,12 @@
       <nav>
         <ul class="header_nav_ul">
           <li class="header_nav_ul_li">
-            <a href="/index.html">Студія</a>
+            <a href="#" style="color: #2196f3">Студія</a>
             <div class="nav_overlay"></div>
           </li>
 
           <li class="header_nav_ul_li">
-            <a href="/extra.html" style="color: #2196f3">Портфоліо</a>
+            <a href="/extra.html">Портфоліо</a>
             <div class="nav_overlay"></div>
           </li>
           <li class="header_nav_ul_li">
@@ -42,6 +42,46 @@
       <div class="header_div_span">
         <p>info@devstudio.com</p>
         <p>+38 096 111 11 11</p>
+      </div>
+
+      <button class="burger-open">
+        <svg class="svg_icon2">
+          <use href="img/menu_24px.svg"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="burger_window is-hiddenn">
+      <div class="burger_content">
+        <button class="burger-close">
+          <svg class="svg_icon_closee" width="11" height="11" viewBox="0 0 11 11" fill="black"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
+              fill="black" />
+          </svg>
+        </button>
+
+        <div class="firstblockburger">
+          <a href="#">Студія</a>
+          <a href="/extra.html">Портфоліо</a>
+          <a href="#">Контакти</a>
+        </div>
+
+        <div class="secondblockburger">
+          <h6>+38 096 111 11 11</h6>
+          <p>info@devstudio.com</p>
+        </div>
+
+        <div class="thirdblockburger">
+          <a href="#">Instagram</a>
+          <div class="peregorodka"></div>
+          <a href="#">Twitter</a>
+          <div class="peregorodka"></div>
+          <a href="#">Facebook</a>
+          <div class="peregorodka"></div>
+          <a href="#">LinkedIn</a>
+        </div>
       </div>
     </div>
   </header>
@@ -172,6 +212,10 @@
       </div>
     </div>
   </footer>
+  <script src="./modal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
