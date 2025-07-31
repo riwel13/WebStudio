@@ -449,6 +449,12 @@ a {
     background-color: #2f303a;
   }
 }
+@media (min-resolution: 2x) {
+  .first {
+    background-image: url("/img/img_background2x.png");
+    background-size: cover;
+  }
+}
 @media screen and (max-width: 1320px) {
   .first h1 {
     font-size: 30px;
@@ -898,7 +904,9 @@ footer span {
   background-color: white;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid #EEEEEE;
+  position: relative;
+  display: inline-block;
+  border: 1px solid #eeeeee;
 }
 .photobox p {
   font-family: Roboto;
@@ -918,6 +926,32 @@ footer span {
 
 .textboxport {
   margin: 20px 24px;
+}
+
+.overlayy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-size: 24px;
+  font-family: Roboto;
+  color: white;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlayy p {
+  margin: 20px;
+  font-size: 18px;
+  font-family: Roboto;
+}
+
+.photobox:hover .overlayy {
+  opacity: 1;
 }
 
 @media screen and (max-width: 1320px) {
